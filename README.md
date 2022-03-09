@@ -1,6 +1,6 @@
 # Signicat Documentation
 ## Introduction
-Signicat is the leading provider of digital identity solutions in Europe. This integration enables identity verification and authentication across the Nordic and Benelux regions through 9 ForgeRock supported Signicat IdPs. IdPs are more convenient and secure than traditional proof of identity, but have the same level of trust. This solution allows users full control to approve identity related requests for their transactions, directly from their smartphone or card. Consumers can simply rely on their IdP – a standardized login – to gain access to information across both the public and private sectors without the need to memorize mutiple logins.
+Signicat is the leading provider of digital identity solutions in Europe. This integration enables identity verification and authentication across the Nordic and Benelux regions through 9 ForgeRock supported Signicat IdPs. For additional information on how digital identity can grow a business visit (https://www.signicat.com/blog/what-is-a-digital-identity) 
 ## Normalization Scripts
 This section provides steps for how to set up the Social Identity Provider Profile Transformation scripts required for this integration.
 <br />
