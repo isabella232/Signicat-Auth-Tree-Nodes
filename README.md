@@ -24,7 +24,7 @@ This section provides steps for how to set up the Social Identity Provider Profi
       field("email", rawProfile.email),
       field("username", rawProfile.email)))
 
-6.) Go into scripts again, and find the `Normalized Profile to Managed User` script. This script will convert the normalized social profile into a managed user. Delete the contents of the script and copy & paste the following code snippet into the Script field: 
+7.) Go into scripts again, and find the `Normalized Profile to Managed User` script. This script will convert the normalized social profile into a managed user. Delete the contents of the script and copy & paste the following code snippet into the Script field: 
 
       import static org.forgerock.json.JsonValue.field
       import static org.forgerock.json.JsonValue.json
