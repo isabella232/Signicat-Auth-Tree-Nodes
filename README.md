@@ -6,10 +6,10 @@ This section provides steps for how to set up the Social Identity Provider Profi
 <br />
 1.) Under the  “Native Consoles” tab open “Access Management” <br />
 2.) Select the `Realm` > `Scripts` > `New Script` <br />
-3.) Name the `Signicat Profile Normalization` 
+3.) Name the `Signicat Profile Normalization` <br />
 4.) Select `Script Type` > `Social Identity Profile Transformation` <br />
-4.) Set language `Groovy` <br />
-5.) Paste the following code snippet into the Script field: <br /> 
+5.) Set language `Groovy` <br />
+6.) Paste the following code snippet into the Script field: <br /> 
                   
       import static org.forgerock.json.JsonValue.field
       import static org.forgerock.json.JsonValue.json
