@@ -316,18 +316,17 @@ Transform Script: From the drop down menu, select the `Signicat Profile Normaliz
 Click “Create” <br />
 
 - **Once configuration is created, additional fields will be added. Fill out the following:** <br /> 
-Client Secret: TBD(Provided by Signicat)
-Client Authentication Method: `CLIENT_SECRET_BASIC`
-PKCE Method: `S256`
-Enable Native Nonce: `Enabled`
-User Info Response Format: `JSON`
+Client Secret: TBD(Provided by Signicat) <br />
+Client Authentication Method: `CLIENT_SECRET_BASIC` <br />
+PKCE Method: `S256` <br />
+Enable Native Nonce: `Enabled` <br />
+User Info Response Format: `JSON` <br />
 
 ### 9.) DigID | Market Coverage: The Netherlands 
 
 - **Overview:** DigiD consists of a username and a password, and optionally an additional verification step via SMS.
 The DigiD scheme is managed by Logius, the digital government service of the Netherlands Ministry of the Interior and Kingdom Relations (BZK). It maintains government-wide ICT solutions and common standards, that simplify the communication between authorities, citizens and businesses, with a view to cohesion of the e-government networks. Logius supplies products relating to access, data exchange, standardization and information security. 
-<br />
-Hence, the following types of organisations are eligible to use DigiD:<br />
+<br /> Hence, the following types of organisations are eligible to use DigiD:<br />
 The organisation is a public organisation or a private organisation which is legally authorized to handle a public task.<br />
 The organisation is allowed – on a legal basis – to use the BSN for this public task.<br />
 The task for which DigiD is used is a public one.<br />
