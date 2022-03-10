@@ -5,9 +5,10 @@ Signicat is the leading provider of digital identity solutions in Europe. This i
 This section provides steps for how to set up the Social Identity Provider Profile Transformation scripts required for this integration.
 <br />
 1.) Under the  “Native Consoles” tab open “Access Management” <br />
-2.) Select the Realm > Scripts > +New Script <br />
-3.) Name the Script(i.e “Signicat Profile Normalization”) > Script Type > Social Identity Profile Transformation <br />
-4.) Set language to “Groovy” <br />
+2.) Select the `Realm` > `Scripts` > `New Script` <br />
+3.) Name the `Signicat Profile Normalization` 
+4.) Select `Script Type` > `Social Identity Profile Transformation` <br />
+4.) Set language `Groovy` <br />
 5.) Paste the following code snippet into the Script field: <br /> 
                   
       import static org.forgerock.json.JsonValue.field
@@ -23,7 +24,7 @@ This section provides steps for how to set up the Social Identity Provider Profi
       field("email", rawProfile.email),
       field("username", rawProfile.email)))
 
-6.) Go into scripts again, and find the "Normalized Profile to Managed User" script. This script will convert the normalized social profile into a managed user. Delete the contents of the script and copy & paste the following code snippet into the Script field: 
+6.) Go into scripts again, and find the `Normalized Profile to Managed User` script. This script will convert the normalized social profile into a managed user. Delete the contents of the script and copy & paste the following code snippet into the Script field: 
 
       import static org.forgerock.json.JsonValue.field
       import static org.forgerock.json.JsonValue.json
@@ -48,15 +49,24 @@ This section provides steps for how to set up the Social Identity Provider Profi
    
 
 ## Configure IdPs
-This section provides steps on how to configure each indiviual IdP that Signicat currently offers supported by ForgeRock using the AM console. 
+This section provides steps on how to configure each individual IdP that Signicat currently offers supported by ForgeRock using the AM console. 
 <br />
-In the "Native Console" select "Access Management" from the drop down. Select the Realm and go to Services > Social Identity Provider Service > Secondary Configurations > Add a Secondary Configuration > Select “Client configuration for providers that implement Open ID Connect specifications” Fill out the fields within “New oidcConfig configuration” according to the following. If not indicated, leave the field blank. 
+In the `Native Console` select `Access Management` from the drop-down. Select the Realm and go to `Services` > `Social 
+Identity Provider Service` > `Secondary Configuration` > Add a Secondary Configuration > Select `Client 
+configuration for providers that implement Open ID Connect specifications`.
+<br />Fill out the fields within `New oidcConfig configuration` according to the following. If not indicated, leave the field blank. 
 <br />
 <br />
-Note: The URLS provided in this documentation are production URLS for customer usage. 
+Note: The URLs provided in this documentation are production URLs for customer usage. 
                              
 ### 1.) Norwegian BankID | Market Coverage: Norway
-- **Overview:**  Norwegian BankID (as well as Norwegian BankID on Mobile) is an electronic identity scheme in Norway that can be used for digital onboarding (Assure), authentication (Connect) and electronic signing (Sign) of documents. BankID is based on a coordinated infrastructure that is developed by the banks through the Norwegian BankID Cooperation, under the direction of the “Finansnæringens Hovedorganisasjon” and “Sparebankforeningen”. Signicat is the leading provider of Norwegian BankID in Norway with over 75% of the total BankID traffic. Signicat is delivering BankID to banks, consumer finance firms, insurance companies, government services as well as small and medium business segments.
+- **Overview:**  Norwegian BankID (as well as Norwegian BankID on Mobile) is an electronic identity scheme in Norway 
+  that can be used for digital onboarding (Assure), authentication (Connect) and electronic signing (Sign) of 
+  documents. BankID is based on a coordinated infrastructure that is developed by the banks through the Norwegian 
+  BankID Cooperation, under the direction of the “Finansnæringens Hovedorganisasjon” and “Sparebankforeningen”. 
+  Signicat is the leading provider of Norwegian BankID in Norway with over 75% of the total BankID traffic. Signicat 
+  delivers BankID to banks, consumer finance firms, insurance companies, government services as well as small and 
+  medium business segments.
 
 - **Fill out the following fields:**<br />
 Auth ID Key: `sub` <br />
@@ -66,7 +76,8 @@ Access Token Endpoint URL: `https://eu01.signicat.com/oidc/token` <br />
 User Profile Service URL: `https://eu01.signicat.com/oidc/userinfo` <br />
 Redirect URL: `TBD(Provided by Signicat)` <br />
 Scope Delimiter: Put a single space (“ “) <br />
-OAuth Scopes: `openid`, `profile`, `signicat.national_id` make sure that these items are not space nor comma separated, but added as separate items. <br />
+OAuth Scopes: `openid`, `profile`, `signicat.national_id` (make sure that these items are not space nor comma 
+  separated, but added as separate items.) <br />
 ACR Values: `urn:signicat:oidc:method:nbid` <br />
 Well Known Endpoint: `https://eu01.signicat.com/oidc/.well-known/openid-configuration` <br />
 Issuer: `https://eu01.signicat.com/oidc`  <br />
@@ -98,7 +109,7 @@ Access Token Endpoint `URL: https://eu01.signicat.com/oidc/token` <br />
 User Profile Service `URL: https://eu01.signicat.com/oidc/userinfo` <br /> 
 Redirect URL: `TBD(Provided by Signicat)` <br />
 Scope Delimiter: Put a single space (“ “) <br />
-OAuth Scopes: `openid`, `profile`, `signicat.national_id` make sure that these items are not space or comma separated, but added as separate items. <br /> 
+OAuth Scopes: `openid`, `profile`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values: `urn:signicat:oidc:method:nbid-mobil` <br />
 Well Known Endpoint: `https://eu01.signicat.com/oidc/.well-known/openid-configuration` <br />
 Issuer: `https://eu01.signicat.com/oidc` <br /> 
@@ -130,7 +141,7 @@ Access Token Endpoint URL: `https://eu01.signicat.com/oidc/token` <br />
 User Profile Service URL: `https://eu01.signicat.com/oidc/userinfo` <br /> 
 Redirect URL: TBD(Provided by Signicat) <br />
 Scope Delimiter: Put a single space (“ “) <br /> 
-OAuth Scopes: `openid`, `profile`, `signicat.idin`, `signicat.national_id` make sure that these items are not space or comma separated, but added as separate items. <br /> 
+OAuth Scopes: `openid`, `profile`, `signicat.idin`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values: `urn:signicat:oidc:method:idin-ident` <br />
 Well Known Endpoint: `https://eu01.signicat.com/oidc/.well-known/openid-configuration` <br />
 Issuer: `https://eu01.signicat.com/oidc` <br /> 
@@ -163,7 +174,7 @@ Access Token Endpoint URL:`https://eu01.signicat.com/oidc/token` <br />
 User Profile Service URL: `https://eu01.signicat.com/oidc/userinfo` <br /> 
 Redirect URL: TBD(Provided by Signicat) <br />
 Scope Delimiter: Put a single space (“ “) <br />
-OAuth Scopes:`openid`, `profile`, `signicat.national_id` make sure that these items are not space or comma separated, but added as separate items. <br /> 
+OAuth Scopes:`openid`, `profile`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values:`urn:signicat:oidc:method:sbid` <br />
 Well Known Endpoint: `https://eu01.signicat.com/oidc/.well-known/openid-configuration` <br />
 Issuer: `https://eu01.signicat.com/oidc` <br /> 
@@ -194,7 +205,7 @@ Access Token Endpoint URL:`https://id.signicat.com/oidc/token` <br />
 User Profile Service URL:`https://id.signicat.com/oidc/userinfo` <br />
 Redirect URL: TBD(Provided by Signicat)<br />
 Scope Delimiter: Put a single space (“ “) <br />
-OAuth Scopes:`openid`, `profile`, `mitid`, `signicat.national_id` make sure that these items are not space or comma separated, but added as separate items. <br /> 
+OAuth Scopes:`openid`, `profile`, `mitid`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values: `urn:signicat:oidc:method:mitid-cpr` <br />
 Well Known Endpoint: `https://id.signicat.com/oidc/.well-known/openid-configuration` <br />
 Issuer: `https://id.signicat.com/oidc` <br /> 
@@ -225,7 +236,7 @@ Access Token Endpoint URL:`https://id.signicat.com/oidc/token` <br />
 User Profile Service URL: `https://id.signicat.com/oidc/userinfo` <br />
 Redirect URL: TBD(Provided by Signicat) <br />
 Scope Delimiter: Put a single space (“ “) <br />
-OAuth Scopes:`openid`, `profile`, `signicat.national_id` make sure that these items are not space or comma separated, but added as separate items. <br /> 
+OAuth Scopes:`openid`, `profile`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values:`urn:signicat:oidc:method:nemid` <br />
 Well Known Endpoint: `https://id.signicat.com/oidc/.well-known/openid-configuration` <br />
 Issuer:`https://id.signicat.com/oidc` <br /> 
@@ -258,7 +269,7 @@ Access Token Endpoint URL: `https://eu01.signicat.com/oidc/token` <br />
 User Profile Service URL: `https://eu01.signicat.com/oidc/userinfo` <br /> 
 Redirect URL: TBD(Provided by Signicat) <br />
 Scope Delimiter: Put a single space (“ “) <br />
-OAuth Scopes:`openid`, `profile`, `signicat.itsme`, `signicat.national_id`, `address` make sure that these items are not space or comma separated, but added as separate items. <br /> 
+OAuth Scopes:`openid`, `profile`, `signicat.itsme`, `signicat.national_id`, `address` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values:`urn:signicat:oidc:method:itsme-register` <br />
 Well Known Endpoint: `https://eu01.signicat.com/oidc/.well-known/openid-configuration` <br />
 Issuer: `https://eu01.signicat.com/oidc` <br /> 
@@ -290,7 +301,7 @@ Access Token Endpoint URL:TBD(To be inserted per customer once PKIo certificate 
 User Profile Service URL: TBD(To be inserted per customer once PKIo certificate has been delivered)<br />
 Redirect URL: TBD(Provided by Signicat)<br />
 Scope Delimiter: Put a single space (“ “) <br />
-OAuth Scopes:`idp_scoping:simulator` make sure that these items are not space or comma separated, but added as separate items. <br />
+OAuth Scopes:`idp_scoping:simulator` (make sure that these items are not space or comma separated, but added as separate items) <br />
 ACR Values:N/A (scope controlled) <br />
 Well Known Endpoint: TBD(Provided by Signicat) <br />
 Issuer: TBD(To be inserted per customer once PKIo certificate has been delivered)<br />
@@ -330,7 +341,7 @@ Access Token Endpoint URL: TBD(To be inserted per customer once PKIo certificate
 User Profile Service URL: TBD(To be inserted per customer once PKIo certificate has been delivered)<br />
 Redirect URL: TBD(Provided by Signicat) <br />
 Scope Delimiter: Put a single space (“ “) <br />
-OAuth Scopes:`idp_scoping:simulator` make sure that these items are not space or comma separated, but added as separate items.  <br />
+OAuth Scopes:`idp_scoping:simulator` (make sure that these items are not space or comma separated, but added as separate items)  <br />
 ACR Values: N/A (scope controlled)  <br />
 Well Known Endpoint: TBD(Provided by Signicat) <br />
 Issuer: TBD(To be inserted per customer once PKIo certificate has been delivered)<br />
