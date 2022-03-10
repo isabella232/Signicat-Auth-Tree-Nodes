@@ -74,7 +74,7 @@ Client ID: `TBD(Provided by Signicat)` <br />
 Authentication Endpoint URL: `https://eu01.signicat.com/oidc/authorize` <br />
 Access Token Endpoint URL: `https://eu01.signicat.com/oidc/token` <br />
 User Profile Service URL: `https://eu01.signicat.com/oidc/userinfo` <br />
-Redirect URL: `TBD(Provided by Signicat)` <br />
+Redirect URL: URI of the tree configured in AM  <br />
 Scope Delimiter: Put a single space (“ “) <br />
 OAuth Scopes: `openid`, `profile`, `signicat.national_id` (make sure that these items are not space nor comma 
   separated, but added as separate items.) <br />
@@ -107,7 +107,7 @@ Client ID: `TBD(Provided by Signicat)` <br />
 Authentication Endpoint `URL:https://eu01.signicat.com/oidc/authorize` <br /> 
 Access Token Endpoint `URL: https://eu01.signicat.com/oidc/token` <br /> 
 User Profile Service `URL: https://eu01.signicat.com/oidc/userinfo` <br /> 
-Redirect URL: `TBD(Provided by Signicat)` <br />
+Redirect URL: URI of the tree configured in AM  <br />
 Scope Delimiter: Put a single space (“ “) <br />
 OAuth Scopes: `openid`, `profile`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values: `urn:signicat:oidc:method:nbid-mobil` <br />
@@ -139,7 +139,7 @@ Client ID: TBD(Provided by Signicat)<br />
 Authentication Endpoint URL: `https://eu01.signicat.com/oidc/authorize` <br />
 Access Token Endpoint URL: `https://eu01.signicat.com/oidc/token` <br /> 
 User Profile Service URL: `https://eu01.signicat.com/oidc/userinfo` <br /> 
-Redirect URL: TBD(Provided by Signicat) <br />
+Redirect URL: URI of the tree configured in AM   <br />
 Scope Delimiter: Put a single space (“ “) <br /> 
 OAuth Scopes: `openid`, `profile`, `signicat.idin`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values: `urn:signicat:oidc:method:idin-ident` <br />
@@ -172,7 +172,7 @@ Client ID: TBD(Provided by Signicat) <br />
 Authentication Endpoint URL: `https://eu01.signicat.com/oidc/authorize` <br /> 
 Access Token Endpoint URL:`https://eu01.signicat.com/oidc/token` <br /> 
 User Profile Service URL: `https://eu01.signicat.com/oidc/userinfo` <br /> 
-Redirect URL: TBD(Provided by Signicat) <br />
+Redirect URL: URI of the tree configured in AM <br />
 Scope Delimiter: Put a single space (“ “) <br />
 OAuth Scopes:`openid`, `profile`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values:`urn:signicat:oidc:method:sbid` <br />
@@ -203,7 +203,7 @@ Client ID: TBD(Provided by Signicat) <br />
 Authentication Endpoint URL:`https://id.signicat.com/oidc/authorize` <br /> 
 Access Token Endpoint URL:`https://id.signicat.com/oidc/token` <br /> 
 User Profile Service URL:`https://id.signicat.com/oidc/userinfo` <br />
-Redirect URL: TBD(Provided by Signicat)<br />
+Redirect URL: URI of the tree configured in AM <br />
 Scope Delimiter: Put a single space (“ “) <br />
 OAuth Scopes:`openid`, `profile`, `mitid`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values: `urn:signicat:oidc:method:mitid-cpr` <br />
@@ -234,7 +234,7 @@ Client ID: TBD(Provided by Signicat)<br />
 Authentication Endpoint URL:`https://id.signicat.com/oidc/authorize` <br /> 
 Access Token Endpoint URL:`https://id.signicat.com/oidc/token` <br /> 
 User Profile Service URL: `https://id.signicat.com/oidc/userinfo` <br />
-Redirect URL: TBD(Provided by Signicat) <br />
+Redirect URL: URI of the tree configured in AM  <br />
 Scope Delimiter: Put a single space (“ “) <br />
 OAuth Scopes:`openid`, `profile`, `signicat.national_id` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values:`urn:signicat:oidc:method:nemid` <br />
@@ -267,7 +267,7 @@ Client ID: TBD(Provided by Signicat) <br />
 Authentication Endpoint URL: `https://eu01.signicat.com/oidc/authorize` <br /> 
 Access Token Endpoint URL: `https://eu01.signicat.com/oidc/token` <br /> 
 User Profile Service URL: `https://eu01.signicat.com/oidc/userinfo` <br /> 
-Redirect URL: TBD(Provided by Signicat) <br />
+Redirect URL: URI of the tree configured in AM  <br />
 Scope Delimiter: Put a single space (“ “) <br />
 OAuth Scopes:`openid`, `profile`, `signicat.itsme`, `signicat.national_id`, `address` (make sure that these items are not space or comma separated, but added as separate items) <br /> 
 ACR Values:`urn:signicat:oidc:method:itsme-register` <br />
@@ -299,7 +299,7 @@ Client ID: TBD(Provided by Signicat) <br />
 Authentication Endpoint URL: TBD(To be inserted per customer once PKIo certificate has been delivered) <br />
 Access Token Endpoint URL:TBD(To be inserted per customer once PKIo certificate has been delivered) <br />
 User Profile Service URL: TBD(To be inserted per customer once PKIo certificate has been delivered)<br />
-Redirect URL: TBD(Provided by Signicat)<br />
+Redirect URL: URI of the tree configured in AM <br />
 Scope Delimiter: Put a single space (“ “) <br />
 OAuth Scopes:`idp_scoping:simulator` (make sure that these items are not space or comma separated, but added as separate items) <br />
 ACR Values:N/A (scope controlled) <br />
@@ -339,7 +339,7 @@ Client ID: TBD(Provided by Signicat) <br />
 Authentication Endpoint URL: TBD(To be inserted per customer once PKIo certificate has been delivered)<br />
 Access Token Endpoint URL: TBD(To be inserted per customer once PKIo certificate has been delivered)<br />
 User Profile Service URL: TBD(To be inserted per customer once PKIo certificate has been delivered)<br />
-Redirect URL: TBD(Provided by Signicat) <br />
+Redirect URL: URI of the tree configured in AM  <br />
 Scope Delimiter: Put a single space (“ “) <br />
 OAuth Scopes:`idp_scoping:simulator` (make sure that these items are not space or comma separated, but added as separate items)  <br />
 ACR Values: N/A (scope controlled)  <br />
